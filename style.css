@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px 28px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+header {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e2e6f0;
+    padding-bottom: 16px;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.site-subtitle {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+nav {
+    margin-top: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 16px;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+}
+
+nav a:hover {
+    background: #eef2ff;
+    border-color: #c7d2fe;
+}
+
+nav a.active {
+    background: #4f46e5;
+    color: #ffffff;
+}
+
+main h1 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+main h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #4b5563;
+    margin-bottom: 12px;
+}
+
+ul {
+    margin-left: 18px;
+    margin-top: 6px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+th, td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+th {
+    background: #eef2ff;
+    font-weight: 600;
+}
+
+.resume-header {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.resume-main {
+    flex: 2;
+}
+
+.resume-contacts {
+    flex: 1;
+    padding: 12px;
+    background: #f9fafb;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.resume-name {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.resume-position {
+    font-size: 16px;
+    color: #4b5563;
+}
+
+.resume-photo {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;   
+    display: block;
+    margin: 0 auto 10px auto;
+    border: 2px solid #4f46e5;
+}
+
+main p {
+    text-align: justify;
+}
+
+.chart {
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.chart-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;        
+}
+
+.chart-label {
+    flex: 0 1 220px;
+    font-size: 14px;
+}
+
+.chart-bar-outer {
+    flex: 1 1 140px;
+    height: 14px;
+    background: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.chart-bar-inner {
+    height: 100%;
+    border-radius: 999px;
+    background: #4f46e5;
+}
+
+.chart-value {
+    flex: 0 0 80px;
+    font-size: 13px;
+    text-align: right;
+    color: #4b5563;
+}
+
+.chart-note {
+    font-size: 12px;
+    color: #6b7280;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+@media (max-width: 700px) {
+    .chart-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .chart-label,
+    .chart-bar-outer,
+    .chart-value {
+        width: 100%;
+    }
+
+    .chart-value {
+        text-align: left;
+    }
+}
+
+.security-section {
+    margin-top: 32px;
+    padding-top: 18px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.security-section h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.security-section h2::before {
+    content: "▍ ";
+    color: #4f46e5;
+    font-weight: 700;
+}
+
+.security-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.security-images.two {
+    justify-content: center;   
+}
+
+.security-images img {
+    width: 100%;
+    max-width: 360px;          
+    height: 240px;             
+    object-fit: contain;       
+    display: block;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
